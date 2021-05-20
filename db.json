@@ -1,1 +1,14 @@
-{"users":[{"email":"kingchaithu14@gmail.com","password":"chaithU123","username":"chaithu","id":0},{"email":"kingchaithu121@gmail.com","password":"chaithU123","username":"chaithu","id":1}],"products":[{"id":1,"name":"Samsung Note 20","price":999.99,"description":"Multitask with Samsung’s fastest Note processor yet; Hyperfast process speeds transform your gaming and binging with less interruption; Catch every idea, knockout work, score big and share all your moments without slowing down","rating":4.5,"url":"https://images-na.ssl-images-amazon.com/images/I/81AT%2BFlc%2BEL._AC_SL1500_.jpg"}]}
+[
+	{
+		"email": "kingchaithu14@gmail.com",
+		"password": "chaithU123",
+		"username": "chaithu",
+		"id": 0
+	},
+	{
+		"email": "kingchaithu121@gmail.com",
+		"password": "chaithU123",
+		"username": "chaithu",
+		"id": 1
+	}
+]
