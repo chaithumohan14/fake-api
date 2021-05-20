@@ -44,7 +44,7 @@ let db: DB = {
 };
 
 const reWrite = () => {
-	fs.writeFileSync("./db.json", JSON.stringify(db));
+	fs.writeFileSync("./db.json", JSON.stringify(db.users));
 };
 
 const loginUser = (email: string, password: string, res: Response) => {
