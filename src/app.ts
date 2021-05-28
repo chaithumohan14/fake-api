@@ -155,9 +155,12 @@ app.get("/users/:id", (req, res) => {
 	}
 });
 
-app.get("/products", (_req, res) => {
+app.get("/products", (req, res) => {
 	const products = db.products;
-	res.status(200).json(products);
+	const { q } = req.query;
+	res
+		.status(200)
+		.json(products.slice(0, q !== undefined && Boolean(+q) ? +q : 20));
 });
 
 app.get("/products/:id", (req, res) => {
@@ -175,4 +178,8 @@ app.get("/products/:id", (req, res) => {
 		res.status(400).json({ msg: "Product not found" });
 		return;
 	}
+});
+
+app.use((_req, res) => {
+	res.status(404).json({ msg: "Page Not Found" });
 });
