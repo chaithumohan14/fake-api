@@ -30,12 +30,12 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-	"origin": "*",
-	"methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-	"preflightContinue": false,
-	"optionsSuccessStatus": 204
-}));
+// app.use(cors({
+// 	"origin": "*",
+// 	"methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+// 	"preflightContinue": false,
+// 	"optionsSuccessStatus": 204
+// }));
 const SECRET = `Y?[D11>g[n'f{n5g/%O"LyeVBCp:3-4&_3mNSLb=;lyZnfN$LJ9<KrBfyxpV9]H`;
 
 const dbFile = JSON.parse(
